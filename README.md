@@ -2,22 +2,6 @@
 
 **Modeling Neural Activation & Representational Analytics**
 
-
-## Features
-
-- Multiple backends: NumPy, Numba, JAX, PyTorch, CuPy  
-- Distance metrics: correlation, euclidean, Mahalanobis, crossnobis  
-- High-level API: `RSAModel`, `Searchlight`, `Pipeline`
-- End-to-end demos: YAML-driven exploratory pipelines  
-- Deep-learning integration: extract CNN activations, neural predictivity  
-- Visualization & reporting: RDM heatmaps, MDS plots, sensor topographies  
-
-## Installation
-
-# mnara
-
-**Modeling Neural Activation & Representational Analytics**
-
 mnara is a high-performance Python toolbox for computational brain modeling, RSA/RDM computation, and end-to-end MEG/EEG/fMRI pipelines.
 
 > **mnara** means “lighthouse” in Arabic— which represents the aim of the package: shedding light on brain computations and representations.
