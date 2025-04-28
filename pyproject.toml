@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mnara"
+version = "0.0.1"
+description = "Modeling Neural Activation & Representational Analytics"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "BSD" }
+authors = [
+  { name = "Hamza Abdelhedi", email = "hamza.abdelhedii@gmail.com" },
+]
+keywords = ["RSA", "RDM", "MEG", "EEG", "fMRI", "neuroimaging", "representation", "brain", "modeling"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: BSD License",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+dependencies = [
+  "numpy",
+  "scipy",
+  "joblib",
+  "tqdm",
+  "click",
+]
+
+[project.optional-dependencies]
+gpu = [
+  "jax>=0.4 ; platform_system != 'Windows'",
+  "jaxlib>=0.4 ; platform_system != 'Windows'",
+  "torch",
+  "cupy-cuda11x>=11.0",
+  "numba>=0.55",
+]
+
+[project.scripts]
+mnara-compute-rdms = "mnara.cli.compute_rdms:cli"
+
